@@ -50,3 +50,6 @@ vim.keymap.set("n", "<leader>ns", ":ObsidianSearch<cr>", { desc = "[S]earch note
 vim.keymap.set("n", "<leader>nf", ":ObsidianQuickSwitch<cr>", { desc = "[F]ind note by title" })
 vim.keymap.set("n", "<leader>nn", ":ObsidianNew<cr>", { desc = "[N]ew note" })
 vim.keymap.set("n", "<leader>nb", ":ObsidianBacklinks<cr>", { desc = "[B]acklinks" })
+
+-- Git
+vim.keymap.set("n", "<leader>gg", ":Neogit<cr>", { desc = "[Git] status" })
