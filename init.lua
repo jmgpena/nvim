@@ -1,4 +1,4 @@
-require('keymaps')
-require('config.lazy')
-require('options')
-require('misc')
+require("keymaps")
+require("config.lazy")
+require("options")
+require("misc")

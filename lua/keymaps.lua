@@ -1,6 +1,6 @@
 -- Set <space> as the leader key
 -- See `:help mapleader`
--- NOTE: must happen before plugins are loaded (otherwise wrong leader will be used)  
+-- NOTE: must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
@@ -40,5 +40,13 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- Save file
 vim.keymap.set("n", "<leader>fs", vim.cmd.update, { desc = "Save file" })
 vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save File" })
+
 -- Quit all
 vim.keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "[q]uit neovim" })
+
+-- Notes (obsidian)
+vim.keymap.set("n", "<leader>nt", ":ObsidianToday<cr>", { desc = "Open [t]oday's note" })
+vim.keymap.set("n", "<leader>ns", ":ObsidianSearch<cr>", { desc = "[S]earch notes" })
+vim.keymap.set("n", "<leader>nf", ":ObsidianQuickSwitch<cr>", { desc = "[F]ind note by title" })
+vim.keymap.set("n", "<leader>nn", ":ObsidianNew<cr>", { desc = "[N]ew note" })
+vim.keymap.set("n", "<leader>nb", ":ObsidianBacklinks<cr>", { desc = "[B]acklinks" })
